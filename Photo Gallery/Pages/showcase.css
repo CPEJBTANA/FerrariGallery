@@ -1,0 +1,284 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trirong", 'Times New Roman', Times, serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Light background for better contrast */
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 0%;
+    padding-top: 60px;
+    font-weight: lighter;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    line-height: 1;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0px;
+    background-color: #000000; /* Light background for better contrast */
+}
+
+.h1-white-bg {
+   
+    margin-top: 0%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 100%;
+    margin-bottom: 0px;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text color for contrast */
+}
+
+
+
+p {
+    margin: 0 50px; /* Reduced left and right margins */
+    font-size: 1.5rem;
+    line-height: 1.6; /* Improved line height for readability */
+    margin-top: 20px; /* Added some top margin for spacing */
+    text-align: justify; /* Justify text for better alignment */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #fff; /* White background for better readability */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1.highlight:hover {
+    color: #f00;
+    font-size: 100px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #000;
+    height: 100px;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    margin-left: 50px;
+}
+
+li a:hover {
+    background-color: #ce2c2c;
+}
+
+li.nav-icon {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.icon-image {
+    width: 40px;
+    height: 40px;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; /* Set the first row to a fixed height */
+    gap: 0px; /* Add gap between grid items */
+    grid-template-areas: 
+      "H1 sd form schuma sd2"
+      "H1 sd form schuma sd2"
+      "H1 sd form schuma sd2"
+      "H1 sd form schuma sd2"; 
+    height: calc(100vh - 120px); /* Adjust height to fill the viewport minus navbar height */
+    margin-top: 0px; /* Ensure the grid is below the nav bar */
+    padding: 0px; /* Add padding to leave space on the edges */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.H1, .sd, .sd2, .form .schuma {
+   
+    padding: 0px; /* Add padding inside each grid item */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.H1 { 
+    grid-area: H1; 
+    background-color: #f0f0f0; /* Optional: Add background color for better visibility */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text horizontally */
+    font-size: 5rem;
+    overflow: hidden;
+}
+
+.H1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0%;
+    filter: grayscale();
+    transition: 0.5s all ease-in-out;
+}
+
+.H1 img:hover {
+    filter: none;
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+
+.schuma { 
+    grid-area: schuma; 
+    background-color: #f0f0f0; /* Optional: Add background color for better visibility */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text horizontally */
+    font-size: 5rem;
+    overflow: hidden;
+}
+
+.schuma img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0%;
+    filter: grayscale();
+    transition: 0.5s all ease-in-out;
+}
+
+.schuma img:hover {
+    filter: none;
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+.sd { 
+    grid-area: sd; 
+    background-color: #e0e0e0; /* Optional: Add background color for better visibility */
+    overflow: hidden;
+    padding: 0%;
+}
+
+.sd img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0%;
+    filter: grayscale();
+    transition: 0.5s all ease-in-out;
+}
+
+.sd img:hover {
+    filter: none;
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+.sd2 { 
+    grid-area: sd2; 
+    background-color: #e0e0e0; /* Optional: Add background color for better visibility */
+    overflow: hidden;
+    padding: 0%;
+}
+
+.sd2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0%;
+    filter: grayscale();
+    transition: 0.5s all ease-in-out;
+}
+
+.sd2 img:hover {
+    filter: none;
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+.form { 
+    grid-area: form; 
+    background-color: #e0e0e0; /* Optional: Add background color for better visibility */
+    overflow: hidden;
+    padding: 0%;
+  
+}
+
+.form img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0%;
+    filter: grayscale();
+    transition: 0.5s all ease-in-out;
+}
+
+.form img:hover {
+    filter: none;
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+
+
+
+.container2 {
+    display: grid; 
+    grid-template-columns: 1fr; /* Added missing semicolon */
+    grid-template-rows: 1fr; /* Added missing semicolon */
+    gap: 0px; /* Add gap between grid items */
+    grid-template-areas: 
+        "h2"
+        "h2" 
+        "h2"
+        "h2"; /* Added missing semicolon */
+    height: calc(100vh - 120px); /* Adjust height to fill the viewport minus navbar height */
+    margin-top: 0px; /* Ensure the grid is below the nav bar */
+    padding: 0px; /* Add padding to leave space on the edges */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.h2 {
+    grid-area: h2; /* Corrected grid area name to match class */
+    background-color: #f0f0f0; /* Optional: Add background color for better visibility */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text horizontally */
+    font-size: 5rem;
+    overflow: hidden;
+    padding: 0px; /* Add padding inside each grid item */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.h2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0%; /* This is redundant as padding is already set to 0 */
+    filter: grayscale();
+    transition: 0.5s all ease-in-out;
+}
+
+.h2 img:hover {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.1);}
